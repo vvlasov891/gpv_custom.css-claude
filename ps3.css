@@ -1,61 +1,15 @@
-/* === Корпус контроллера — красный === */
-#controller.playstation .controller {
-  background-color: #cc0000 !important;
+/* Весь корпус */
+#controller svg path,
+#controller svg rect,
+#controller svg circle,
+#controller svg ellipse {
+  fill: #cc0000 !important;
 }
 
-/* Боковые захваты */
-#controller.playstation .grip.left,
-#controller.playstation .grip.right {
-  background-color: #cc0000 !important;
-}
-
-/* Лицевые кнопки (основа) */
-#controller.playstation .bumper.left,
-#controller.playstation .bumper.right,
-#controller.playstation .trigger.left,
-#controller.playstation .trigger.right {
-  background-color: #aa0000 !important;
-}
-
-/* D-pad */
-#controller.playstation .dpad {
-  background-color: #aa0000 !important;
-}
-
-#controller.playstation .dpad .face {
-  background-color: #aa0000 !important;
-}
-
-/* Центральные кнопки (Select, Start, PS) */
-#controller.playstation .button.select,
-#controller.playstation .button.start,
-#controller.playstation .button.home {
-  background-color: #aa0000 !important;
-  border-color: #880000 !important;
-}
-
-/* Нажатые кнопки — чуть темнее */
-#controller.playstation .button.face.pressed,
-#controller.playstation .button.bumper.pressed,
-#controller.playstation .dpad .face.pressed {
-  background-color: #880000 !important;
-}
-
-/* === Аналоговые стики — зелёные === */
-#controller.playstation .stick.left .stick-inner,
-#controller.playstation .stick.right .stick-inner {
-  background-color: #22aa44 !important;
-  border-color: #1a8835 !important;
-}
-
-/* Основание стика */
-#controller.playstation .stick.left,
-#controller.playstation .stick.right {
-  background-color: #197730 !important;
-}
-
-/* Нажатый стик */
-#controller.playstation .stick.left.pressed .stick-inner,
-#controller.playstation .stick.right.pressed .stick-inner {
-  background-color: #155c24 !important;
+/* Стики */
+#controller .analog,
+#controller .analog-stick,
+#controller [class*="stick"] circle,
+#controller [class*="stick"] ellipse {
+  fill: #22aa44 !important;
 }
