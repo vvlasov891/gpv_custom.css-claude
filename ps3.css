@@ -1,15 +1,9 @@
-/* Весь корпус */
-#controller svg path,
-#controller svg rect,
-#controller svg circle,
-#controller svg ellipse {
-  fill: #cc0000 !important;
+/* Весь контроллер — красный */
+.controller.ps.white {
+  filter: hue-rotate(320deg) saturate(5) brightness(0.9);
 }
 
-/* Стики */
-#controller .analog,
-#controller .analog-stick,
-#controller [class*="stick"] circle,
-#controller [class*="stick"] ellipse {
-  fill: #22aa44 !important;
+/* Стики — зелёные (отменяем фильтр контроллера и делаем зелёными) */
+.controller.ps.white .stick {
+  filter: hue-rotate(160deg) saturate(3) brightness(1.1);
 }
